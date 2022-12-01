@@ -112,9 +112,10 @@ a:hover {
   flex-direction: column;
   opacity: 0;
   pointer-events: none;
-  background-color: var(--secondary-color);
+  border-radius: 0 0 0.5rem;
+  background-color: var(--white-color);
   transition: opacity 0.5s ease;
-  box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
+  box-shadow: -1px 10px 10px -2px var(--primary-color);
 }
 
 .nav-ul {
@@ -228,9 +229,6 @@ hr {
 
 /*** Insurance-section ***/
 .insurance-section {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -240,6 +238,7 @@ hr {
 
 .title {
   margin-bottom: 1rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,7 +258,7 @@ hr {
   width: 320px;
   padding: 1rem;
   background-color: var(--secondary-color);
-  border: 0.5rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
 }
 
@@ -287,7 +286,8 @@ hr {
 }
 
 .form input,
-select {
+select,
+textarea {
   padding: 0.5rem;
   font-family: var(--font);
   outline: none;
@@ -311,7 +311,7 @@ select {
 }
 
 .features {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -391,6 +391,85 @@ select {
   width: 150px;
 }
 
+.contact {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.contact img {
+  width: 200px;
+}
+
+.contact-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-social a {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background-color: var(--white-color);
+  box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
+}
+
+.about {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
+}
+
+.about-title img {
+  width: 50px;
+}
+
+.about-content {
+  margin-top: 1rem;
+}
+
+.about-content img {
+  width: 200px;
+}
+
+.policies,
+.terms {
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1.5rem;
+}
+
 .footer {
   margin-top: 4rem;
   padding: 2rem;
@@ -406,6 +485,7 @@ select {
 .footer h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .footer-social {
@@ -432,6 +512,15 @@ select {
   }
   .nav {
     width: 25%;
+  }
+
+  .title {
+    width: 750px;
+    padding: 0;
+  }
+
+  .insurance-section {
+    padding-bottom: 2rem;
   }
 
   .insurance-types {
@@ -474,6 +563,18 @@ select {
     width: 100%;
   }
 
+  .form-dates-2-home {
+    margin-bottom: 5.8rem;
+  }
+
+  .form-dates-2-life {
+    margin-top: 2rem;
+  }
+
+  .form-dates-caucion {
+    margin-bottom: 2.6rem;
+  }
+
   .btn-contact {
     display: flex;
     justify-content: center;
@@ -499,5 +600,22 @@ select {
 
   .btn-contact button:hover {
     transform: scale(1.1);
+  }
+
+  .contact-social {
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 5rem 0;
+    flex-direction: row;
+  }
+
+  .about-title {
+    width: 45%;
+  }
+
+  .license {
+    padding: 0 10rem;
   }
 }
