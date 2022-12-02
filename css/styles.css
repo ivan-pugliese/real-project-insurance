@@ -173,7 +173,7 @@ a:hover {
 }
 
 hr {
-  color: black;
+  width: 50%;
 }
 
 .text-primary {
@@ -225,6 +225,22 @@ hr {
   border: none;
   cursor: pointer;
   fill: var(--primary-color);
+}
+
+.dark-theme-btn {
+  padding-bottom: 0.3rem;
+  width: 100px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.dark-theme-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--black-color);
 }
 
 /*** Insurance-section ***/
@@ -338,7 +354,6 @@ textarea {
 }
 
 .steps {
-  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,7 +393,6 @@ textarea {
 }
 
 .opinion {
-  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,6 +616,14 @@ textarea {
     transform: scale(1.1);
   }
 
+  .steps {
+    width: 320px;
+  }
+
+  .opinion {
+    width: 320px;
+  }
+
   .contact-social {
     flex-direction: column;
   }
@@ -618,4 +640,31 @@ textarea {
   .license {
     padding: 0 10rem;
   }
+
+  .dark-theme-btn {
+    display: block;
+    padding-bottom: 0.3rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+}
+
+/* ****************************** Dark mode ****************************** */
+
+.dark-theme {
+  background-color: #000301;
+  color: var(--white-color);
+}
+
+.dark-theme-shadow {
+  box-shadow: -1px 10px 14px -4px var(--primary-color);
+}
+
+.dark-theme-features {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
 }
