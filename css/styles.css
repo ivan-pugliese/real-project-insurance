@@ -190,6 +190,7 @@ hr {
   top: 0;
   padding: 0.5rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   height: var(--header-height);
@@ -229,7 +230,7 @@ hr {
 
 .dark-theme-btn {
   padding-bottom: 0.3rem;
-  width: 100px;
+  width: 50px;
   font-size: 1.3rem;
   border: none;
   border-radius: 0.5rem;
@@ -240,7 +241,6 @@ hr {
 
 .dark-theme-btn:hover {
   transform: scale(1.1);
-  background-color: var(--black-color);
 }
 
 /*** Insurance-section ***/
@@ -285,6 +285,7 @@ hr {
 .form p {
   font-size: 1rem;
   margin-left: 0.4rem;
+  color: var(--black-color);
 }
 
 .form-dates {
@@ -528,6 +529,10 @@ textarea {
     width: 25%;
   }
 
+  .logo {
+    display: block;
+  }
+
   .title {
     width: 750px;
     padding: 0;
@@ -665,6 +670,8 @@ textarea {
 }
 
 .dark-theme-features {
-  background-color: var(--secondary-color);
-  color: var(--black-color);
+  border-top: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  background-color: #000301;
+  color: var(--white-color);
 }
