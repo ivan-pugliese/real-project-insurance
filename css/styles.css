@@ -156,7 +156,7 @@ a:hover {
   border-radius: 0.5rem;
   color: var(--primary-color);
   background-color: var(--white-color);
-  box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
 }
 
 .cards img {
@@ -275,7 +275,7 @@ hr {
   padding: 1rem;
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
-  box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
 }
 
 .form > * {
@@ -602,6 +602,11 @@ textarea {
     margin-bottom: 2.6rem;
   }
 
+  .form-dates-praxis,
+  .form-dates-art {
+    padding: 0;
+  }
+
   .btn-contact {
     display: flex;
     justify-content: center;
@@ -674,7 +679,7 @@ textarea {
 }
 
 .dark-theme-shadow {
-  box-shadow: -1px 10px 14px -4px var(--primary-color);
+  box-shadow: 5px 4px 4px -1px var(--primary-color);
 }
 
 .dark-theme-features {
