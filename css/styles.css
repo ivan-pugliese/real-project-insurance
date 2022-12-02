@@ -184,11 +184,11 @@ hr {
 
 /***** general *****/
 
-/*** Header - nav ***/
+/*** Header ***/
 .header {
   position: sticky;
   top: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -327,6 +327,7 @@ textarea {
   transform: scale(1.1);
 }
 
+/*** Features ***/
 .features {
   margin-top: 2rem;
   padding: 3rem 1rem;
@@ -372,6 +373,7 @@ textarea {
   border-radius: 50%;
 }
 
+/*** Clients ***/
 .clients {
   margin-top: 3rem;
   padding: 2rem 1rem;
@@ -406,6 +408,7 @@ textarea {
   width: 150px;
 }
 
+/*** Contact page ***/
 .contact {
   padding: 3rem 1rem;
   display: flex;
@@ -445,6 +448,7 @@ textarea {
   box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
 }
 
+/*** About page ***/
 .about {
   padding: 3rem 1rem;
   display: flex;
@@ -475,6 +479,7 @@ textarea {
   width: 200px;
 }
 
+/*** Policies and Terms ***/
 .policies,
 .terms {
   margin: 3rem 2rem;
@@ -485,6 +490,7 @@ textarea {
   gap: 1.5rem;
 }
 
+/*** Footer ***/
 .footer {
   margin-top: 4rem;
   padding: 2rem;
@@ -519,6 +525,8 @@ textarea {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+/* ****************************** Media Queries ****************************** */
 
 @media screen and (min-width: 768px) {
   .header {
