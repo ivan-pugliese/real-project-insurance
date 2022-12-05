@@ -14,10 +14,8 @@
 :root {
   --primary-color: #038e7b;
   --secondary-color: #e6fff7;
-  --tertiary-color: #025c50;
-  --black-color: #000;
-  --black-alpha-color: rgba(0, 0, 0, 0.7);
-  --white-color: #fff;
+  --black-dark-theme-color: #111111;
+  --white-smoke-color: #f5f5f5;
   --font: "Roboto Serif", sans-serif;
   --header-height: 4rem;
 }
@@ -28,7 +26,7 @@ html {
   box-sizing: border-box;
   font-family: var(--font);
   font-size: 16px;
-  background-color: #f5f5f5;
+  background-color: var(--white-smoke-color);
 }
 
 *,
@@ -155,7 +153,7 @@ a:hover {
   padding: 0 1.2rem;
   border-radius: 0.5rem;
   color: var(--primary-color);
-  background-color: var(--white-color);
+  background-color: var(--white-smoke-color);
   box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
 }
 
@@ -194,7 +192,7 @@ hr {
   align-items: center;
   gap: 2rem;
   height: var(--header-height);
-  background-color: var(--white-color);
+  background-color: var(--white-smoke-color);
   box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
 }
 
@@ -216,7 +214,7 @@ hr {
 .logo span {
   padding: 0.5rem;
   font-size: 1.2rem;
-  color: var(--white-color);
+  color: var(--white-smoke-color);
   background-color: var(--primary-color);
   border-radius: 1rem;
 }
@@ -285,7 +283,7 @@ hr {
 .form p {
   font-size: 1rem;
   margin-left: 0.4rem;
-  color: var(--black-color);
+  color: var(--black-dark-theme-color);
 }
 
 .form-dates {
@@ -317,7 +315,7 @@ textarea {
   font-family: var(--font);
   border: none;
   border-radius: 0.5rem;
-  color: var(--white-color);
+  color: var(--white-smoke-color);
   background-color: var(--primary-color);
   cursor: pointer;
   transition: transform 0.2s;
@@ -444,7 +442,7 @@ textarea {
   padding: 0.5rem 1rem;
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
-  background-color: var(--white-color);
+  background-color: var(--white-smoke-color);
   box-shadow: -1px 10px 14px -7px rgba(0, 0, 0, 0.86);
 }
 
@@ -499,7 +497,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  color: var(--white-color);
+  color: var(--white-smoke-color);
   background-color: var(--primary-color);
 }
 
@@ -518,7 +516,7 @@ textarea {
 }
 
 .footer-social a {
-  color: var(--white-color);
+  color: var(--white-smoke-color);
 }
 
 .license {
@@ -564,7 +562,7 @@ textarea {
     font-family: var(--font);
     border: none;
     border-radius: 0.5rem;
-    color: var(--white-color);
+    color: var(--white-smoke-color);
     background-color: var(--primary-color);
     cursor: pointer;
     transition: transform 0.2s;
@@ -625,7 +623,7 @@ textarea {
     font-family: var(--font);
     border: none;
     border-radius: 0.5rem;
-    color: var(--white-color);
+    color: var(--white-smoke-color);
     background-color: var(--primary-color);
     cursor: pointer;
     transition: transform 0.2s;
@@ -675,8 +673,8 @@ textarea {
 /* ****************************** Dark mode ****************************** */
 
 .dark-theme {
-  background-color: #111111;
-  color: var(--white-color);
+  background-color: var(--black-dark-theme-color);
+  color: var(--white-smoke-color);
 }
 
 .dark-theme-shadow {
@@ -686,6 +684,6 @@ textarea {
 .dark-theme-features {
   border-top: 3px solid var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
-  background-color: #111111;
-  color: var(--white-color);
+  background-color: var(--black-dark-theme-color);
+  color: var(--white-smoke-color);
 }
